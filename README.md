@@ -8,7 +8,7 @@ Add this to `composer.json`:
 
 ```json
 "require": {
-	"gidix/pushnotifier-php": "^1.0.0"
+	"gidix/pushnotifier-php": "^2.0.0"
 }
 ```
 
