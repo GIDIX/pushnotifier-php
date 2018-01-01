@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<ruleset name="GIDIX PHP Standards">
+	<description>GIDIX PHP Standards</description>
+
+	<!-- display progress -->
+	<arg value="p" />
+	<!-- use colors in output -->
+	<arg name="colors" />
+
+	<!-- inherit rules from: -->
+	<rule ref="PSR1" />
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+
+	<!-- Additional rules -->
+	<rule ref="Generic.Commenting.Todo.CommentFound">
+		<type>warning</type>
+	</rule>
+
+	<!-- Disallow deprecated functions -->
+	<rule ref="Generic.PHP.DeprecatedFunctions" />
+
+	<!-- Disallow PHP closing tags -->
+	<rule ref="Zend.Files.ClosingTag" />
+
+	<!-- Force UNIX-style line endings -->
+	<rule ref="Generic.Files.LineEndings">
+		<properties>
+			<property name="eolChar" value="\n"/>
+		</properties>
+	</rule>
+
+	<!-- Allow empty catch-blocks -->
+	<rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedCATCH">
+		<severity>0</severity>
+	</rule>
+
+	<!-- Require upper-case constant names -->
+	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+
+	<!-- Reguire __construct -->
+	<rule ref="Generic.NamingConventions.ConstructorName" />
+
+	<!-- Require doc comments to be well-formatted -->
+	<rule ref="Generic.Commenting.DocComment"/>
+
+	<!-- Require spaces around operators -->
+	<rule ref="Squiz.WhiteSpace.OperatorSpacing" />
+
+	<!-- Require spaces around control structures -->
+	<rule ref="Squiz.WhiteSpace.ControlStructureSpacing" />
+
+	<!-- Disallow space-indent -->
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent" />
+
+	<!-- Require space after casting -->
+	<rule ref="Generic.Formatting.SpaceAfterCast" />
+
+	<!-- Require lower-case PHP-keywords -->
+	<rule ref="Generic.PHP.LowerCaseKeyword" />
+
+	<!-- Require lower-case true, false and null -->
+	<rule ref="Generic.PHP.LowerCaseConstant" />
+
+	<!-- Require correct array bracket spacing -->
+	<rule ref="Squiz.Arrays.ArrayBracketSpacing" />
+
+	<!-- Paths to check -->
+	<file>src</file>
+</ruleset>

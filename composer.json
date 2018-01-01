@@ -1,0 +1,32 @@
+{
+	"name": "gidix/pushnotifier-php",
+	"type": "library",
+	"description": "PushNotifier library for PHP",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Benjamin Schmidt",
+			"email": "github@bfx.re",
+			"homepage": "https://bluefirex.de"
+		}
+	],
+	"version": "2.0",
+	"require": {
+		"php": ">=7.0.0",
+		"mashape/unirest-php": "^3.0"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^2.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"GIDIX\\PushNotifier\\SDK\\": "src"
+		}
+	},
+	"scripts": {
+		"test": [
+			"@phpcs"
+		],
+		"phpcs": "php vendor/bin/phpcs"
+	}
+}
