@@ -79,7 +79,7 @@ will retrieve an array of `GIDIX\PushNotifier\SDK\Device` objects, containing an
 ### Sending Notifications
 
 ```php
-    $result = $app->sendNotification($devices, 'Some Content', https://some.example.org/with/path.html');
+    $result = $app->sendNotification($devices, 'Some Content', 'https://some.example.org/with/path.html');
 ```
 
 ## Exceptions
